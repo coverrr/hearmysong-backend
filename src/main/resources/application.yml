@@ -1,0 +1,26 @@
+spotify:
+    client:
+      clientId: 
+      clientSecret: 
+      accessTokenUri: https://accounts.spotify.com/api/token
+      userAuthorizationUri: https://accounts.spotify.com/authorize
+      tokenName: oauth_token
+      scope: user-read-private user-read-email user-read-playback-state user-modify-playback-state streaming
+      
+      #authenticationScheme: query
+      #clientAuthenticationScheme: form
+    resource:
+      userInfoUri: https://api.spotify.com/v1/me
+      
+spring:
+  datasource:
+    username: hearmysong-admin
+    password: 4321
+    url: jdbc:mysql://localhost:3306/hearmysong
+  jpa:
+    hibernate:
+      ddl-auto: update
+     
+logging:
+  level:
+    root: INFO
